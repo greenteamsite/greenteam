@@ -1,0 +1,30 @@
+﻿<div class="container body-content col-xs-12">
+    <div ng-controller="topmenuCtrl" ng-init="activeItem = 'projects'" ng-include src="'app/templates/topmenu.html'"></div>
+    <div ng-controller="projectsCtrl as vm">
+        <ol class="breadcrumb">
+            <li><a href="/home">Home</a></li>
+            <li class="active">Our projects</li>
+        </ol>
+        <div class="jumbotron">
+            <h1>Our Projects</h1>
+
+            <div class="row">
+                <div ng-repeat="project in vm.projects" class="col-sm-6 col-md-4">
+                    <div class="thumbnail">
+                        <a ng-href="{{project.url}}">
+                            <img class="media-object" ng-src="{{project.urlPicture}}" title="{{project.name}}" alt="{{project.name}}" />
+                        </a>
+                        <div class="caption">
+                            <a ng-href="{{project.url}}" target="_blank">
+                                <h3 class="media-heading" ng-bind="project.name"></h3>
+                            </a>
+                            <p ng-bind="project.shortInfo"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div style="margin-top:20px; text-align:left"><a class="btn btn-primary btn-lg" href="/about" role="button">See our developers</a></div>
+        </div>
+
+    </div>
+</div>

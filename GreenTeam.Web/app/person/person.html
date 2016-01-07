@@ -1,0 +1,47 @@
+﻿<div class="container body-content col-xs-12">
+    <div ng-controller="topmenuCtrl" ng-init="activeItem = 'about'" ng-include src="'app/templates/topmenu.html'"></div>
+    <div ng-controller="personCtrl as vm">
+        <ol class="breadcrumb">
+            <li><a href="/home">Home</a></li>
+            <li><a href="/about">About us</a></li>
+            <li class="active" ng-bind="vm.person.name"></li>
+        </ol>
+        <div class="jumbotron">
+            <div class="row">
+                <div style="vertical-align:top; margin-top:10px; align-self:center" class="col-md-3 col-lg-3 col-xs-12 col-sm-6">
+                    <img ng-src="{{vm.person.urlPicture}}" alt="{{vm.person.name}}" title="{{vm.person.name}}">
+                </div>
+                <div class="col-md-9 col-lg-9 col-xs-12 col-sm-6">
+                    <h1 ng-bind="vm.person.name"></h1>
+                    <p><b>Position: </b> <span ng-bind="vm.person.position"></span></p>
+                    <p><b>Summary:</b> <span ng-bind="vm.person.shortDescription"></span></p>
+                    <p><b>Skills:</b></p> <p ng-bind-html="vm.person.skills"></p>
+                    <p><b>Linkedin:</b> <a ng-href="vm.person.linkedin"><span ng-bind="vm.person.linkedin"></span></a></p>
+                    <address>
+                        <p><b>E-mail:</b> <span ng-bind="vm.person.mail"></span></p>
+                        <p><b>Phone:</b> <span ng-bind="vm.person.phone"></span></p>
+                        <p><b>Skype:</b> <span ng-bind="vm.person.skype"></span></p>
+                    </address>
+                </div>
+                <div class="col-md-12">
+                    <h4><b>{{vm.person.name}}'s projects:</b></h4>
+                </div>
+                <div ng-repeat="project in vm.projects" class="col-sm-6 col-md-4">
+                    <div class="thumbnail">
+                        <a ng-href="{{project.project.url}}">
+                            <img class="media-object" ng-src="{{project.project.urlPicture}}" title="{{project.project.name}}" alt="{{project.project.name}}" />
+                        </a>
+                        <div class="caption">
+                            <h3 class="media-heading" ng-bind="project.project.name"></h3>
+                            <p ng-bind="project.project.shortInfo"></p>
+                            <p><b>Role in the project: </b><span ng-bind="project.personRole"></span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12" style="margin-top:20px; text-align:left">
+                    <a class="btn btn-primary btn-lg" ng-href="mailto:{{vm.person.mail}}" role="button">Get in touch with <span ng-bind="vm.person.name"></span></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

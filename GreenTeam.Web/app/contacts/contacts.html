@@ -1,0 +1,30 @@
+﻿<div id="fb-root"></div>
+<script>
+(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<div class="container body-content col-xs-12">
+    <div ng-controller="topmenuCtrl" ng-init="activeItem = 'contacts'" ng-include src="'app/templates/topmenu.html'"></div>
+    <div ng-controller="contactsCtrl as vm">
+        <ol class="breadcrumb">
+            <li><a href="/home">Home</a></li>
+            <li class="active">Contacts</li>
+        </ol>
+        <div class="jumbotron">
+            <h1>Contacts</h1>
+            <p>If you are interested in our team, please write us just now: <a href="mailto:ingreenlife@outlook.com">ingreenlife@outlook.com</a>.</p>
+            <p>Or just tell friends about us via Facebook (guaranteed pluses to your karma!):</p>
+            <meta itemprop="image" content="greenteam.site/pictures/logo/logo.jpg" />
+            <div class="fb-share-button" data-href="http://greenteam.site" data-layout="button_count"></div>
+        </div>
+    </div>
+</div>
+    <!--<footer class="well well-sm">
+        <span class="welltext">&copy; 2015 - &#8734 Green Team</span>
+    </footer>-->
+
+
