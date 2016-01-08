@@ -15,7 +15,7 @@ namespace GreenTeam.Web
             // register all your components with the container here
             // it is NOT necessary to register your controllers
 
-            container.RegisterType<IContext, JsonContext>();
+            container.RegisterType<IContext, JsonContext>(new ContainerControlledLifetimeManager());
             container.RegisterType<IPersonRepository, PersonRepository>();
             container.RegisterType<IProjectRepository, ProjectRepository>();
 
