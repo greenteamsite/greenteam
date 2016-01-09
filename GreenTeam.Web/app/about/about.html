@@ -1,5 +1,5 @@
 ﻿<div class="container body-content col-xs-12">
-    <div ng-controller="topmenuCtrl" ng-init="activeItem = 'about'" ng-include src="'app/templates/topmenu.html'"></div>
+    <div ng-init="activeItem = 'about'" ng-include src="'app/templates/topmenu.html'"></div>
     <div ng-controller="aboutCtrl as vm">
         <ol class="breadcrumb">
             <li><a href="/home">Home</a></li>
@@ -10,39 +10,16 @@
             <p>We are creative international team of web developers. As a small family of passionate individuals, we form an effective team for realization the most challenging projects. </p>
             <p>Why Greens? We just love this colour and as all green-lovers we are optimistic, creative and trustworthy.</p>
             <p>Meet our team:</p>
-
             <div class="row" style="vertical-align:middle">
-                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                <div ng-repeat="person in vm.data.persons" class="col-lg-4 col-md-4 col-sm-12 col-xs-12" style="margin-bottom:10px;">
                     <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6" style="min-width:160px">
-                        <a href="/person/alex-green">
-                            <img width="160" class="media-object" src="/Pictures/Profile/alex.gif" alt="Alex Green" />
+                        <a href="/person/{{person.urlName}}">
+                            <img width="160" class="media-object" ng-src="{{person.urlPicture}}" alt="{{person.name}}" />
                         </a>
                     </div>
                     <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-                        <h2 class="media-heading"><a href="/person/alex-green">Alex Green</a></h2>
-                        <p>Senior .NET Developer</p>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6" style="min-width:160px">
-                        <a href="/person/tania-green">
-                            <img width="160" class="media-object" src="/Pictures/Profile/tania.gif" alt="Tania Green" />
-                        </a>
-                    </div>
-                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-                        <h2 class="media-heading"><a href="/person/tania-green">Tania Green</a></h2>
-                        <p>Junior .NET Developer, Web Designer</p>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6" style="min-width:160px">
-                        <a href="/person/serg-green">
-                            <img width="160" class="media-object" src="/Pictures/Profile/serg.gif" alt="Serj Green" />
-                        </a>
-                    </div>
-                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-                        <h2 class="media-heading"><a href="/person/serg-green">Serg Green</a></h2>
-                        <p>Junior .NET Developer</p>
+                        <h2 class="media-heading"><a ng-bind="person.name" href="/person/{{person.urlName}}"></a></h2>
+                        <p ng-bind="person.position"></p>
                     </div>
                 </div>
             </div>

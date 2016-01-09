@@ -2,7 +2,7 @@
     "use strict";
 
     var app = angular.module("greenTeam",
-    ["ngRoute", "ngTouch", "ngSanitize"]);
+    ["ngRoute", "ngTouch", "ngSanitize", "ngAnimate"]);
     app.config([
         '$routeProvider', '$locationProvider',
         function ($routeProvider, $locationProvider) {

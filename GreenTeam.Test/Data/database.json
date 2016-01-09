@@ -45,7 +45,7 @@
     {
       "UrlName": "alex-green",
       "Name": "Alex Green",
-      "Position": "Senior .NET Developer",
+      "Position": ".NET Developer",
       "ShortDescription": "5+ years of experience developing with ASP.NET(C#). Developed 15+ projects with a wide variety of areas including finances, energetics, mass media and e-commerce.",
       "Skills": "•\tC# 5.0, .Net Framework 3.5-4.5, ASP.Net MVC 4/5, WCF, Web API, Unit testing <br />\r\n                                       •\tEntity Framework, LINQ, T-SQL, ADO.Net<br />\r\n                                       •\tHTML5, CSS3, XML, AJAX, JavaScript<br />\r\n                                       •\tAngular, Knockout, JQuery, Bootstrap, Kendo UI<br />\r\n                                       •\tGIT, SVN, TFS<br />\r\n                                       •\tMS Visual Studio 2013/2012/2010, MS SQL Server 2012/2008<br />\r\n                                       •\tWindows Server 2012/2008, IIS 8.0/7.5, Windows Azure.",
       "Mail": "sasha.tkachuk@gmail.com",
@@ -57,7 +57,7 @@
     {
       "UrlName": "tania-green",
       "Name": "Tania Green",
-      "Position": "Junior .NET Developer, Web Designer",
+      "Position": ".NET Developer, Web Designer",
       "ShortDescription": "1 year of experience developing with ASP.NET(C#) as part of the team that developed a new version of the entertainment website.",
       "Skills": "•\tC# 5.0, .Net Framework 4.5, ASP.Net MVC5<br />\r\n•\tEntity Framework, LINQ<br />\r\n•\tHTML5, CSS3, JavaScript<br />\r\n•\tJQuery, Bootstrap<br />\r\n•\tMS Visual Studio 2013, MS SQL Server 2012<br />\r\n•\tWindows Server 2012",
       "Mail": "solarwind@bigmir.net",
@@ -69,7 +69,7 @@
     {
       "UrlName": "serg-green",
       "Name": "Serg Green",
-      "Position": "Junior .NET Developer",
+      "Position": ".NET Developer",
       "ShortDescription": "1+ year of experience developing with ASP.NET(C#) as part of the team that developed a new version of the entertainment website.",
       "Skills": "•\tC# 5.0, .Net Framework 4.5, ASP.Net MVC5<br />\r\n•\tEntity Framework, LINQ<br />\r\n•\tHTML5, CSS3, JavaScript<br />\r\n•\tJQuery, Bootstrap<br />\r\n•\tMS Visual Studio 2013, MS SQL Server 2012<br />\r\n•\tWindows Server 2012",
       "Mail": "serheysy@gmail.com",

@@ -7,6 +7,5 @@
         public string Url { get; set; }
         public string ShortInfo { get; set; }
         public string UrlPicture { get; set; }
-        public string OurInput { get; set; }
     }
 }

@@ -26,18 +26,17 @@ namespace GreenTeam.Web
                       "~/Scripts/angular-mocks.js",
                       "~/Scripts/angular-resource.js",
                       "~/Scripts/angular-sanitize.js",
+                      "~/Scripts/angular-animate.js",
                       "~/Scripts/angular-touch.js"));
 
             bundles.Add(new ScriptBundle("~/bundles/app").Include(
                       "~/app/app.js",
                       "~/app/home/homeCtrl.js",
-                      "~/app/home/homeSvc.js",
                       "~/app/person/personCtrl.js",
                       "~/app/person/personSvc.js",
                       "~/app/contacts/contactsCtrl.js",
                       "~/app/projects/projectsCtrl.js",
                       "~/app/projects/projectsSvc.js",
-                      "~/app/templates/topmenuCtrl.js",
                       "~/app/about/aboutCtrl.js",
                       "~/app/about/aboutSvc.js"));
 

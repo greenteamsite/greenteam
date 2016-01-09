@@ -15,15 +15,9 @@ namespace GreenTeam.Web.Controllers
             _projectRepo = projectRepo;
         }
 
-        public Project GetProject(int id)
-        {
-            var model = _projectRepo.GetProject(id);
-            return model;
-        }
-
         public List<Project> GetProjects()
         {
-            var model = _projectRepo.GetProjects();
+            var model = _projectRepo.GetProjectList();
             return model;
         }
 

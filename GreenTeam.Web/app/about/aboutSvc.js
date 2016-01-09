@@ -5,19 +5,22 @@
         .module("greenTeam")
         .factory("aboutSvc",
         [
-            "$http",
+            "$http", "$q",
             aboutSvc
         ]);
 
-    function aboutSvc($http) {
+    function aboutSvc($http, $q) {
         return {
             getAboutInfo: function () {
-                $http.get('/home/getAboutInfo', { cache: true })
-                    .then(function (data) {
-                        return data;
-                    }, function (error) {
-                        return error;
+                var deferred = $q.defer();
+                $http.get('api/about/getAboutInfo', { cache: true })
+                    .success(function (data) {
+                        deferred.resolve(data);
                     })
+                    .error(function (error) {
+                        deferred.reject(error);
+                    });
+                return deferred.promise;
             }
         }
     }

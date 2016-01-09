@@ -14,16 +14,20 @@ namespace GreenTeam.Data.Repositories
             _context = context;
         }
 
-        public Project GetProject(int id)
-        {
-            return _context.Projects.FirstOrDefault(p => p.Id == id);
-        }
-
-        public List<Project> GetProjects()
+        /// <summary>
+        /// Gets the projects.
+        /// </summary>
+        /// <returns>The projects</returns>
+        public List<Project> GetProjectList()
         {
             return _context.Projects;
         }
 
+        /// <summary>
+        /// Gets the projects by person
+        /// </summary>
+        /// <param name="urlName">Name of the URL.</param>
+        /// <returns>List of ProjectRole</returns>
         public List<ProjectRole> GetProjectsByPerson(string urlName)
         {
             var projectRoles = from personPr in _context.PersonProjects.Where(w => w.PersonUrlName == urlName).Select(s => new { s.ProjectId, s.PersonRole })

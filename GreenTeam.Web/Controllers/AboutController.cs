@@ -1,27 +1,28 @@
-﻿using GreenTeam.Data.Repositories;
+﻿using GreenTeam.Data.Entities;
+using GreenTeam.Data.Repositories;
 using GreenTeam.Web.Models;
-using System;
+using System.Collections.Generic;
 using System.Web.Http;
 
 namespace GreenTeam.Web.Controllers
 {
-    public class HomeController : ApiController
+    public class AboutController : ApiController
     {
         private IPersonRepository _personRepo;
 
-        public HomeController(IPersonRepository personRepo)
+        public AboutController(IPersonRepository personRepo)
         {
             _personRepo = personRepo;
         }
 
-        public HomeVm GetHomeInfo()
+        public AboutVm GetAboutInfo()
         {
-            var model = new HomeVm {
-                Title = "GetHomeInfo",
+            var model = new AboutVm
+            {
                 Persons = _personRepo.GetPersonList()
             };
+
             return model;
         }
-
     }
 }
