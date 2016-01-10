@@ -84,21 +84,21 @@
       "Id": 0,
       "Name": "Moe Misto",
       "Url": "http://moemisto.com.ua/",
-      "ShortInfo": "Informational web-site about political, cultural and entertaing life of Kyiv. Contains news section, base of interesting places and schedule of leisure events.",
+      "ShortInfo": "Informational web site about political, cultural and entertaining life of Kyiv city. Contains news section, base of interesting places and schedule of leisure events.",
       "UrlPicture": "Pictures/Projects/mmisto.jpg"
     },
     {
       "Id": 3,
       "Name": "Soberi Sam",
       "Url": "http://soberisam.com/",
-      "ShortInfo": "Webshop of computers and computer accessories. Has a unique service of online matching different parts of user's own acceptable computer.",
+      "ShortInfo": "Web shop of computers and computer accessories. Has a unique service of online matching different parts of user's own acceptable computer.",
       "UrlPicture": "Pictures/Projects/soberisam.jpg"
     },
     {
       "Id": 1,
       "Name": "Green Team",
       "Url": "http://greenteam.site/",
-      "ShortInfo": "Demo site of the team of software and web debelopers. Contains list of team members, detail information about each of them and list of the finished projects.",
+      "ShortInfo": "Demo site of the team of software and web developers. Contains list of team members, detail information about each of them and list of the finished projects.",
       "UrlPicture": "Pictures/Projects/gt.jpg"
     }
   ]

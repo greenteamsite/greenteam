@@ -45,7 +45,7 @@
     {
       "UrlName": "alex-green",
       "Name": "Alex Green",
-      "Position": ".NET Developer",
+      "Position": "Senior .NET Developer",
       "ShortDescription": "5+ years of experience developing with ASP.NET(C#). Developed 15+ projects with a wide variety of areas including finances, energetics, mass media and e-commerce.",
       "Skills": "•\tC# 5.0, .Net Framework 3.5-4.5, ASP.Net MVC 4/5, WCF, Web API, Unit testing <br />\r\n                                       •\tEntity Framework, LINQ, T-SQL, ADO.Net<br />\r\n                                       •\tHTML5, CSS3, XML, AJAX, JavaScript<br />\r\n                                       •\tAngular, Knockout, JQuery, Bootstrap, Kendo UI<br />\r\n                                       •\tGIT, SVN, TFS<br />\r\n                                       •\tMS Visual Studio 2013/2012/2010, MS SQL Server 2012/2008<br />\r\n                                       •\tWindows Server 2012/2008, IIS 8.0/7.5, Windows Azure.",
       "Mail": "sasha.tkachuk@gmail.com",
@@ -57,7 +57,7 @@
     {
       "UrlName": "tania-green",
       "Name": "Tania Green",
-      "Position": ".NET Developer, Web Designer",
+      "Position": "Junior .NET Developer, Web Designer",
       "ShortDescription": "1 year of experience developing with ASP.NET(C#) as part of the team that developed a new version of the entertainment website.",
       "Skills": "•\tC# 5.0, .Net Framework 4.5, ASP.Net MVC5<br />\r\n•\tEntity Framework, LINQ<br />\r\n•\tHTML5, CSS3, JavaScript<br />\r\n•\tJQuery, Bootstrap<br />\r\n•\tMS Visual Studio 2013, MS SQL Server 2012<br />\r\n•\tWindows Server 2012",
       "Mail": "solarwind@bigmir.net",
@@ -69,7 +69,7 @@
     {
       "UrlName": "serg-green",
       "Name": "Serg Green",
-      "Position": ".NET Developer",
+      "Position": "Junior .NET Developer",
       "ShortDescription": "1+ year of experience developing with ASP.NET(C#) as part of the team that developed a new version of the entertainment website.",
       "Skills": "•\tC# 5.0, .Net Framework 4.5, ASP.Net MVC5<br />\r\n•\tEntity Framework, LINQ<br />\r\n•\tHTML5, CSS3, JavaScript<br />\r\n•\tJQuery, Bootstrap<br />\r\n•\tMS Visual Studio 2013, MS SQL Server 2012<br />\r\n•\tWindows Server 2012",
       "Mail": "serheysy@gmail.com",
@@ -84,21 +84,21 @@
       "Id": 0,
       "Name": "Moe Misto",
       "Url": "http://moemisto.com.ua/",
-      "ShortInfo": "Informational web-site about political, cultural and entertaing life of Kyiv. Contains news section, base of interesting places and schedule of leisure events.",
+      "ShortInfo": "Informational web site about political, cultural and entertaining life of Kyiv city. Contains news section, base of interesting places and schedule of leisure events.",
       "UrlPicture": "Pictures/Projects/mmisto.jpg"
     },
     {
       "Id": 3,
       "Name": "Soberi Sam",
       "Url": "http://soberisam.com/",
-      "ShortInfo": "Webshop of computers and computer accessories. Has a unique service of online matching different parts of user's own acceptable computer.",
+      "ShortInfo": "Web shop of computers and computer accessories. Has a unique service of online matching different parts of user's own acceptable computer.",
       "UrlPicture": "Pictures/Projects/soberisam.jpg"
     },
     {
       "Id": 1,
       "Name": "Green Team",
       "Url": "http://greenteam.site/",
-      "ShortInfo": "Demo site of the team of software and web debelopers. Contains list of team members, detail information about each of them and list of the finished projects.",
+      "ShortInfo": "Demo site of the team of software and web developers. Contains list of team members, detail information about each of them and list of the finished projects.",
       "UrlPicture": "Pictures/Projects/gt.jpg"
     }
   ]
