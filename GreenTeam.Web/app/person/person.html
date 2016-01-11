@@ -16,7 +16,7 @@
                     <p><b>Position: </b> <span ng-bind="vm.person.position"></span></p>
                     <p><b>Summary:</b> <span ng-bind="vm.person.shortDescription"></span></p>
                     <p><b>Skills:</b></p> <p ng-bind-html="vm.person.skills"></p>
-                    <p><b>Linkedin:</b> <a ng-href="vm.person.linkedin"><span ng-bind="vm.person.linkedin"></span></a></p>
+                    <p><b>Linkedin:</b> <a ng-href="{{vm.person.linkedin}}"><span ng-bind="vm.person.linkedin"></span></a></p>
                     <address>
                         <p><b>E-mail:</b> <span ng-bind="vm.person.mail"></span></p>
                         <p><b>Phone:</b> <span ng-bind="vm.person.phone"></span></p>
